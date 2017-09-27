@@ -16,4 +16,36 @@ Then look at the logs for the 6.2.2.GA crash.
 
 Look in assets for script.jslocal to see what fires the event.
 
+# Error log
+```
+[DEBUG] :  Could not parse JSON. Error: Error Domain=NSCocoaErrorDomain Code=3840 "Badly formed object around character 97." UserInfo={NSDebugDescription=Badly formed object around character 97.}
+[ERROR] :  The application has crashed with an uncaught exception 'NSRangeException'.
+[ERROR] :  Reason:
+[ERROR] :  *** -[__NSArray0 objectAtIndex:]: index 0 beyond bounds for empty NSArray
+[ERROR] :  Stack trace:
+[ERROR] :  0   CoreFoundation                      0x000000010fa1eaf3 __exceptionPreprocess + 147
+[ERROR] :  1   libobjc.A.dylib                     0x000000010efdc141 objc_exception_throw + 48
+[ERROR] :  2   CoreFoundation                      0x000000010fa3627d -[__NSArray0 objectAtIndex:] + 93
+[ERROR] :  3   mL_Jira_Test                        0x0000000108945d11 -[AppModule fireEvent:] + 97
+[ERROR] :  4   mL_Jira_Test                        0x00000001089461f1 -[AppModule fireEvent:withObject:] + 113
+[ERROR] :  5   mL_Jira_Test                        0x000000010880f4c1 -[AppProtocolHandler handleAppToTiRequest] + 945
+[ERROR] :  6   mL_Jira_Test                        0x000000010880fa3c -[AppProtocolHandler startLoading] + 188
+[ERROR] :  7   CFNetwork                           0x000000010cd9f206 ___ZN16CFURLProtocol_NS28_protocolInterface_startLoadEPK20_CFCachedURLResponse_block_invoke + 303
+[ERROR] :  8   libdispatch.dylib                   0x0000000110a5a792 _dispatch_client_callout + 8
+[ERROR] :  9   libdispatch.dylib                   0x0000000110a3d28d _dispatch_block_invoke_direct + 358
+[ERROR] :  10  CFNetwork                           0x000000010cd0df88 _ZN19RunloopBlockContext13_invoke_blockEPKvPv + 24
+[ERROR] :  11  CoreFoundation                      0x000000010f971be4 CFArrayApplyFunction + 68
+[ERROR] :  12  CFNetwork                           0x000000010cd0de5e _ZN19RunloopBlockContext7performEv + 132
+[ERROR] :  13  CFNetwork                           0x000000010cd0dcf8 _ZN17MultiplexerSource7performEv + 282
+[ERROR] :  14  CFNetwork                           0x000000010cd0db2b _ZN17MultiplexerSource8_performEPv + 65
+[ERROR] :  15  CoreFoundation                      0x000000010f9c4c01 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+[ERROR] :  16  CoreFoundation                      0x000000010f9aa0cf __CFRunLoopDoSources0 + 527
+[ERROR] :  17  CoreFoundation                      0x000000010f9a95ff __CFRunLoopRun + 911
+[ERROR] :  18  CoreFoundation                      0x000000010f9a9016 CFRunLoopRunSpecific + 406
+[ERROR] :  19  CFNetwork                           0x000000010cf24f6a _ZL27_privateRunloopEmulationSetPv + 250
+[ERROR] :  20  libsystem_pthread.dylib             0x0000000110ded93b _pthread_body + 180
+[ERROR] :  21  libsystem_pthread.dylib             0x0000000110ded887 _pthread_body + 0
+[ERROR] :  22  libsystem_pthread.dylib             0x0000000110ded08d thread_start + 13
+-- End simulator log ---------------------------------------------------------
 
+```
