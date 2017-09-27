@@ -14,3 +14,6 @@ Then switch tiapp.xml to.
 Run test by clicking the test button.
 Then look at the logs for the 6.2.2.GA crash.
 
+Look in assets for script.jslocal to see what fires the event.
+
+
