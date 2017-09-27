@@ -1,0 +1,17 @@
+".container": {
+	backgroundColor:"white",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+
+".block": {
+	top: 0,
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+
+"WebView": {
+	top: 0,
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}

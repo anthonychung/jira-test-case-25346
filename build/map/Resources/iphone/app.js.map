@@ -1,0 +1,1 @@
+{"version":3,"sources":["Resources/iphone/app.js","app/alloy.js"],"names":["Alloy","require","_","Backbone","createController"],"mappings":"AAAA,AAKA,IAAAA,QAAAC,QAAA,WACAC,IAAAF,MAAAE,GACAC,WAAAH,MAAAG;AANA;AACA,CCFA;ADGA;AACA,AAKAH,MAAAI,iBAAA;AAJA;AACA;AACA;AACA;ACRA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;ADCA","file":"Resources/iphone/app.js"}

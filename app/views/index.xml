@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="index" class="container">
+		<Button onClick="runTest" class="block" title="TEST"/>
+	</Window>
+</Alloy>

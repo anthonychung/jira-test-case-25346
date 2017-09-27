@@ -1,0 +1,16 @@
+TEST CASE
+https://jira.appcelerator.org/browse/TIMOB-25346
+
+Switch between sdk versions.
+
+<sdk-version>6.1.1.GA</sdk-version>
+
+Run test by clicking the test button.
+look at console log. Passes without crashing.
+
+Then switch tiapp.xml to.
+<sdk-version>6.2.2.GA</sdk-version>
+    
+Run test by clicking the test button.
+Then look at the logs for the 6.2.2.GA crash.
+
